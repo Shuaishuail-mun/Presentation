@@ -1,0 +1,94 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/black.css" id="theme">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<h4>Presentation of Final Project</h4>
+					<ul>Minimum Tasks
+						<li><a href="#/stretch"> Minimun</a></li>
+						<li><a href="#/stack"> Stack</a></li>
+						<li><a href="#/hstack"> HStack</a></li>
+						<li><a href="#/vstack"> VStack</a></li>
+					</ul>
+					<ul>Free Choice Tasks
+						<li><a href="#/stretch">Minimun </a></li>
+						<li><a href="#/stack">Stack</a></li>
+						<li><a href="#/hstack">HStack</a></li>
+						<li><a href="#/vstack">VStack</a></li>
+					</ul>
+				</section>
+				<section data-background-color="lightblue">
+					<h3>Minimum Task 1</h3>
+					<p>download the data automatically</p>
+					<!--<img src="assets/image1.png" style="height: 100px;">-->
+					<pre data-id="code"><code data-line-numbers class="hljs" data-trim>
+						data = pd.read_csv("https://health-infobase.canada.ca/src/
+									data/covidLive/covid19.csv")
+					</code></pre>
+				</section>
+				<section data-background-color="lightblue">
+					<section>
+						<h5>Minimum Task 2</h5>
+						<p>showing the number of total cases in each province over
+							time.
+							<a href="https://github.com/taol-assignments/cmsc-final-project/blob/master/province_wise_plots.py">
+								Source Code
+							</a></p>
+					</section>
+					<section><img src="images/total_cases.png" style="height: 600px;"></section>
+				</section>
+				<section data-background-color="lightblue">
+					<section>
+						<h5>Minimum Task 3</h5>
+						<p>showing the number of individuals tested in
+							each province over time.
+							<a href="https://github.com/taol-assignments/cmsc-final-project/blob/master/province_wise_plots.py">
+								Source Code
+							</a></p>
+					</section>
+					<section><img src="images/individuals_tested.png" style="height: 600px;"></section>
+				</section>
+				<section data-background-color="lightblue">
+					<section>
+						<h5>Minimum Task 4</h5>
+						<p>showing the number of new cases per day.<br>
+							<a href="https://github.com/taol-assignments/cmsc-final-project/blob/master/province_wise_plots.py">
+								Source Code
+							</a></p>
+					</section>
+					<section><img src="images/new_cases_per_day.png" style="height: 600px;"></section>
+				</section>
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>
